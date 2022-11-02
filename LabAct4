@@ -1,0 +1,55 @@
+import java.util.Scanner;
+class LabAct4 {
+    public static void main (String args []) {
+
+        Scanner calcu = new Scanner(System.in);
+
+        int operation;
+        int FirNum, SecNum, FTotal;
+
+        try {
+            System.out.println("1. Addition");
+            System.out.println("2. Subtraction");
+            System.out.println("3. Multiplication");
+            System.out.println("4. Division");
+            System.out.print("Choose your Operator: ");
+            operation = calcu.nextInt();
+
+            if (operation == 1) {
+                System.out.print("Enter the First Number: ");
+                FirNum = calcu.nextInt();
+                System.out.print("Enter the Second Number: ");
+                SecNum = calcu.nextInt();
+                FTotal = FirNum + SecNum;
+                System.out.print("The Total is: " + FTotal);
+            }
+            if (operation == 2) {
+                System.out.print("Enter the First Number: ");
+                FirNum = calcu.nextInt();
+                System.out.print("Enter the Second Number: ");
+                SecNum = calcu.nextInt();
+                FTotal = FirNum - SecNum;
+                System.out.print("The Total is: " + FTotal);
+            }
+            if (operation == 3) {
+                System.out.print("Enter the First Number: ");
+                FirNum = calcu.nextInt();
+                System.out.print("Enter the Second Number: ");
+                SecNum = calcu.nextInt();
+                FTotal = FirNum * SecNum;
+                System.out.print("The Total is: " + FTotal);
+            }
+            if (operation == 4) {
+                System.out.print("Enter the First Number: ");
+                FirNum = calcu.nextInt();
+                System.out.print("Enter the Second Number: ");
+                SecNum = calcu.nextInt();
+                FTotal = FirNum / SecNum;
+                System.out.print("The Total is: " + FTotal);
+            }
+        }
+        catch(Exception e){
+            System.out.print("Oops, I'm sorry but you can't do that!");
+        }
+    }
+}
